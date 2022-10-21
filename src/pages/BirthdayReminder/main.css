@@ -1,0 +1,156 @@
+#bdaydiv {
+    background-color: rgba(52, 255, 167, 0.466);
+    position: fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+#birthday {
+    position: relative;
+    top: 15vh;
+    background-color: rgba(52, 187, 255, 0.163);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    vertical-align: middle;
+    justify-items: center;
+    min-width: 450px;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.403);
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+
+#birthday h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px;
+    min-width: 100%;
+    background-color: rgba(0, 145, 255, 0.276);
+    color: rgba(255, 255, 255, 0.022);
+    text-shadow: 0px 0px 0.7px rgba(0, 0, 0, 0.655);
+}
+#birthday label {
+    margin: 0px 10px;
+}
+#birthday p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.555);
+}
+#birthday h2 {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+ }
+#birthday input {
+    display: block;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 3px;
+    border: solid;
+    border-width: 0.5px;
+    transition: all .25s;
+    transition: box-shadow 0s;
+}
+
+#birthday input:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.52) !important;
+    padding: 5px 15px;
+    border: none;
+}
+
+#birthday input:hover {
+    padding: 5px 15px;
+}
+
+#birthday form {
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+#birthday button {
+    min-width: 50%;
+    margin-top: 20px;
+    transition-duration: opacity 2s;
+}
+
+
+#birthday button {
+    border: none;
+    background-color: rgba(0, 145, 255, 0.314);
+    color: antiquewhite;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.666);
+    transition: all .25s
+}
+
+#birthday button:active {
+    opacity: 80%;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.555);
+}
+
+#birthday button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+#birthday #fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 10px 0px
+
+}
+
+#birthday #bday {
+   padding: 5px 10px;
+   max-height: 16px;
+   min-width: 100%;
+}
+
+#birthday article {
+    display: grid;
+    justify-items: start;
+    min-width: 100%;
+    padding: 0%;
+}
+#birthday ul {
+    padding: 0px;
+    width: 100%;
+}
+#birthday li {
+    display: grid;
+    grid-template-columns: 1fr max-content min-content;
+    column-gap: 10px;
+    align-items: center;
+    justify-items:start;
+    width: 90%;
+    margin: 0px 30px;
+    
+}
+
+#birthday article button {
+    box-shadow: none;
+    background-color: rgba(255, 34, 34, 0.832);
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+#birthday section {
+    display: grid;
+    min-width: 100%;
+}
+#birthday section #clear {
+    margin-bottom: 0px;
+    min-width: 50%;
+    min-height: 50px;
+    box-shadow: 0 0 0 0;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 0px;
+}

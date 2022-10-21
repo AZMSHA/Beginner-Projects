@@ -1,0 +1,63 @@
+#accBack{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#accordian {
+    position: relative;
+    top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 692px;
+    background-color: white;
+    min-width: 560px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#accordian h1{
+    flex: 37.5%;
+}
+
+#accordian dl {
+    display: grid;
+    grid-template-columns: 25rem;
+    row-gap: 2rem;
+}
+
+#accordian article{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#accordian header{
+    font-size: 14px;
+    border-radius: 100rem;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    padding: 1.3rem;
+    background-color: rgba(195, 191, 191, 0.434);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.799);
+    margin-bottom: 1.5rem;
+}
+
+#accordian button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.25rem 0.7rem;
+    min-width: 38.98px;
+    border-width: 1px;
+    font-size: 25px;
+    font-weight: 300;
+}

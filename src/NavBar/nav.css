@@ -1,0 +1,51 @@
+nav {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    height: 2.3rem;
+    border-bottom: solid 1px;
+}
+
+nav h1 {
+    padding-left: 9rem;
+    padding-right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#navLinks {
+    padding-right: 10rem;
+}
+
+#navlink{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    margin: 0px 1.5rem;
+}
+
+#navlink:hover {
+    opacity: 0.6;
+}
+
+#navlink:active {
+    font-size: 0.9rem;
+}
+
+#navlink::before {
+    content: "";
+    margin-right: 8px;
+    transition: all 0.5s;
+}
+
+#navlink:hover::before {
+    background-color: black;
+    padding: 0px 1px;
+    width: 1px;
+}

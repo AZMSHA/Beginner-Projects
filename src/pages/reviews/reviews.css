@@ -1,0 +1,139 @@
+#reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: max-content;
+    transform: translateY(10%);
+}
+
+#reviews button{
+    display: flex;
+    width: min-content;
+    height: min-content;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1000rem;
+    background-color: transparent;
+    text-shadow: 0px 2px 5px rgb(81, 81, 81);
+    border: none;
+}
+
+#reviews button:active {
+    text-shadow: 0px 4px 5px rgba(81, 81, 81, 0);
+    background-color: rgba(0, 0, 0, 0) !important; 
+}
+
+#reviews button:hover{
+    cursor: pointer;
+    background-color: rgba(204, 204, 204, 0.269);
+}
+
+#reviews section {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    width:100%;
+    height: 389.38px;
+    overflow: hidden;
+}
+
+#reviews img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 999px;
+    border-color: rgba(0, 131, 245, 0.18);
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 20px rgba(13, 255, 0, 0.389);
+    transition: all 0.5s ease 0.2s;
+}
+
+#reviews article{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 32rem;
+    padding: 3rem 0px;
+    transition: transform 0.4s ease , opacity 0.3s linear; 
+    opacity: 0;
+}
+
+#reviews-next{
+    transform: translateX(110%);
+}
+
+article#reviews-current{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+article#reviews-current img{
+    box-shadow: 1.2rem -1rem 1px rgba(13, 255, 0, 0.389);
+}
+article#reviews-current p{
+    line-height: 1.7rem;
+}
+
+#reviews-previous{
+    transform: translateX(-110%);
+}
+
+#reviews p {
+    font-size:small;
+    text-align: center;
+    padding: 0px 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+    line-height: 1rem;
+    color: rgba(65, 65, 65, 0.856);
+    transition: line-height 0.5s ease 0.2s;
+}
+
+#reviews p::after {
+    content: "''";
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#reviews p::before {
+    content: "''";
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#reviews h2{
+    position: relative;
+    font-family: monospace;
+    margin-bottom: 13px;
+}
+
+#reviews h2 span{
+    color: rgb(48, 192, 0);
+    position: absolute;
+    bottom: 1.3rem;
+    width: max-content;
+    left: 1rem;
+    opacity: 0;
+    font-size: 0.65rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.5s ease 0.2s;
+}
+
+article#reviews-current span{
+    opacity: 1;
+    left:5rem;
+}
